@@ -48,6 +48,12 @@ let
       packages = [ pkgs.nodePackages.vscode-langservers-extracted ];
     }
     {
+      name = "nil";
+      description = "Enable nil, for Nix";
+      serverName = "nil";
+      packages = [ pkgs.nil_ls ];
+    }
+    {
       name = "pyright";
       description = "Enable pyright, for Python.";
     }
